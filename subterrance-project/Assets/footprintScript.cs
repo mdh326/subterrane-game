@@ -9,6 +9,7 @@ public class footprintScript : MonoBehaviour {
     public float minFootDistance = 1f;
     public Vector3 lastPosition;
     bool left = false;
+	// Use this for initialization
 	void Start () {
         lastPosition = transform.position;
 	}
