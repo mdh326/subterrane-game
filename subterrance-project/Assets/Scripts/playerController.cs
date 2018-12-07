@@ -58,6 +58,11 @@ public class playerController : MonoBehaviour {
         {
             hitObject.GetComponent<breakableScript>().breakReg();
         }
+
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 
     void InteractRaycast()

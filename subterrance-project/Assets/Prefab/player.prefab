@@ -245,7 +245,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -360,8 +360,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightFoot: {fileID: 4631296717826844}
   leftFoot: {fileID: 4527784098272020}
-  leftMat: {fileID: 2100000, guid: 687b05565352d1842825e992c3441297, type: 2}
-  rightMat: {fileID: 2100000, guid: 687b05565352d1842825e992c3441297, type: 2}
+  leftMat: {fileID: 2100000, guid: feb3859c102366e4f8365f93431eabe8, type: 2}
+  rightMat: {fileID: 2100000, guid: 6fbbfd3f6d9308f4aab0381296b70988, type: 2}
   minFootDistance: 1
   lastPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &114825841975007418
