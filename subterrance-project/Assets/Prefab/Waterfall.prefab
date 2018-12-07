@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33571983042104264}
   - component: {fileID: 23625326141794630}
   - component: {fileID: 64504677470862304}
+  - component: {fileID: 114639077864436732}
   m_Layer: 0
   m_Name: Waterfall
   m_TagString: Untagged
@@ -98,3 +99,16 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114639077864436732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1969852955440578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d6a146a15bb134a904f5db3deb11e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WF_speed: 0.75
+  WF_renderer: {fileID: 0}
