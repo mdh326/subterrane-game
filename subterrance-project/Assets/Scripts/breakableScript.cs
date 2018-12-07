@@ -28,7 +28,7 @@ public class breakableScript : MonoBehaviour {
         myhits++;
         if(myhits < hithealth)
         {
-            myMat.SetFloat("_break_hitVal", myhits/hithealth);
+            myMat.SetFloat("_break_hitVal", (float)myhits/hithealth);
         }
         else
         {
