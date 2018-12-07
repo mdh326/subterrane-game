@@ -15,11 +15,16 @@ public class crystalGlowScript : MonoBehaviour {
 	void Start () {
         myMat = gameObject.GetComponent<Renderer>().material;
         myLight = gameObject.GetComponentInChildren<Light>();
-	}
+
+        //Debug.Log(myLight);
+        myLight.color = myMat.GetColor("_glowColor");
+    }
 	
 	// Update is called once per frame
 	void Update () {
         myTimer += Time.deltaTime;
+        /*
+        if (myTimer > pulseTime) myTimer = 0f;
 
         if (myTimer > pulseTime / 2){
             sineTime += Time.deltaTime;
@@ -32,7 +37,9 @@ public class crystalGlowScript : MonoBehaviour {
         } else if (sineTime < 0f){
             sineTime = 0f;
         }
-
-        glowFactor = 0.1f + 0.9f * ();
+        */
+        glowFactor = 0.1f + 0.9f * (0.5f + Mathf.Sin(myTimer * 1.5f)/2f);
+        myLight.intensity = glowFactor;
+        myMat.SetFloat("_glowValue", glowFactor);
 	}
 }
