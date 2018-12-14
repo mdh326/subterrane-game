@@ -110,3 +110,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hithealth: 3
   isWaterBlock: 0
+  myDeathPart: {fileID: 1470578805561640, guid: bd7db97578a98114f833517dd3f4baeb,
+    type: 2}

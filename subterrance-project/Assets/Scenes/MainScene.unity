@@ -9933,6 +9933,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hithealth: 3
   isWaterBlock: 1
+  myDeathPart: {fileID: 1470578805561640, guid: bd7db97578a98114f833517dd3f4baeb,
+    type: 2}
 --- !u!4 &1051820351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4249931042930306, guid: ed1e91af9959a324f8d1476fa9e77571,
@@ -16037,6 +16039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hithealth: 3
   isWaterBlock: 0
+  myDeathPart: {fileID: 0}
 --- !u!65 &1829197041
 BoxCollider:
   m_ObjectHideFlags: 0

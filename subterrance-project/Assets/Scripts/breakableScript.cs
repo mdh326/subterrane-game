@@ -8,6 +8,7 @@ public class breakableScript : MonoBehaviour {
     public bool isWaterBlock = false;
     private int myhits = 0;
     private Material myMat;
+    public GameObject myDeathPart;
 
     private ParticleSystem waterfallPart;
     private Vector3 patScale;
@@ -56,6 +57,8 @@ public class breakableScript : MonoBehaviour {
                 newEmiss.rateOverTime = patEmiss;
             }
 
+            GameObject myPart = Instantiate(myDeathPart, transform.position, transform.rotation);
+            Destroy(myPart, 3f);
             Destroy(gameObject);
         }
     }
