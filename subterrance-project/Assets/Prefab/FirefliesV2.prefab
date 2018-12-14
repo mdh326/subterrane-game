@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1748296112273760}
+  m_RootGameObject: {fileID: 1943903950247526}
   m_IsPrefabAsset: 1
---- !u!1 &1314057024214502
+--- !u!1 &1191784550976040
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4899448509513426}
-  - component: {fileID: 182836340075320830}
+  - component: {fileID: 4341160171105142}
+  - component: {fileID: 182519444670573492}
   m_Layer: 0
   m_Name: WindZone
   m_TagString: Untagged
@@ -27,16 +27,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1748296112273760
+--- !u!1 &1943903950247526
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4401991383355490}
-  - component: {fileID: 198329597552985822}
-  - component: {fileID: 199236528949063464}
+  - component: {fileID: 4801105094807472}
+  - component: {fileID: 198831015862781048}
+  - component: {fileID: 199188863479746076}
   m_Layer: 0
   m_Name: FirefliesV2
   m_TagString: Untagged
@@ -44,52 +44,52 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4401991383355490
+--- !u!4 &4341160171105142
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1748296112273760}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -45.46, y: 1.68, z: 0.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4899448509513426}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!4 &4899448509513426
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1314057024214502}
+  m_GameObject: {fileID: 1191784550976040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4401991383355490}
+  m_Father: {fileID: 4801105094807472}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!182 &182836340075320830
+--- !u!4 &4801105094807472
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943903950247526}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -41.721188, y: 1.72, z: 0.28846312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4341160171105142}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!182 &182519444670573492
 WindZone:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1314057024214502}
+  m_GameObject: {fileID: 1191784550976040}
   m_Enabled: 1
-  m_Mode: 1
+  m_Mode: 0
   m_Radius: 2
   m_WindMain: 2
   m_WindTurbulence: 1
   m_WindPulseMagnitude: 0.5
   m_WindPulseFrequency: 0.01
---- !u!198 &198329597552985822
+--- !u!198 &198831015862781048
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1748296112273760}
+  m_GameObject: {fileID: 1943903950247526}
   serializedVersion: 5
   lengthInSec: 5
   simulationSpeed: 1
@@ -163,7 +163,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -216,7 +216,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: -2
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -332,7 +332,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.1
+      scalar: 0.8
       minScalar: 0.05
       maxCurve:
         serializedVersion: 2
@@ -738,7 +738,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.5
+      value: 0.2
       mode: 0
       spread: 0
       speed:
@@ -857,7 +857,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 4
+      scalar: 5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -2561,7 +2561,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
   NoiseModule:
-    enabled: 1
+    enabled: 0
     strength:
       serializedVersion: 2
       minMaxState: 0
@@ -4635,13 +4635,13 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &199236528949063464
+--- !u!199 &199188863479746076
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1748296112273760}
+  m_GameObject: {fileID: 1943903950247526}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -4651,8 +4651,8 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 71f3066bfc8059949aef2dc7c176fc59, type: 2}
-  - {fileID: 2100000, guid: 249b9fbeca6f2b84f8c115455fb7d556, type: 2}
+  - {fileID: 2100000, guid: 4f7881d77c1093f47bc54b79c8473856, type: 2}
+  - {fileID: 2100000, guid: 8bfcc3939bf948349a333f99a157b7f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
