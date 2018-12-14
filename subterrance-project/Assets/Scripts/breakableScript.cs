@@ -10,12 +10,25 @@ public class breakableScript : MonoBehaviour {
     private Material myMat;
 
     private ParticleSystem waterfallPart;
+    private Vector3 patScale;
+    private UnityEngine.ParticleSystem.MinMaxCurve patEmiss;
 
     // Use this for initialization
     void Start () {
         myMat = gameObject.GetComponent<Renderer>().material;
 
-        if (isWaterBlock) waterfallPart = GameObject.Find("Waterfall").GetComponent<ParticleSystem>();
+        if (isWaterBlock)
+        {
+            waterfallPart = GameObject.Find("WaterfallPat").GetComponent<ParticleSystem>();
+            ParticleSystem.ShapeModule newShape = waterfallPart.shape;
+            patScale = newShape.scale;
+            newShape.scale = new Vector3(1f, newShape.scale.y, newShape.scale.z);
+
+            ParticleSystem.EmissionModule newEmiss = waterfallPart.emission;
+            patEmiss = newEmiss.rateOverTime;
+            newEmiss.rateOverTime = 50f;
+        }
+
 	}
 	
 	// Update is called once per frame
@@ -34,8 +47,13 @@ public class breakableScript : MonoBehaviour {
         {
             if (isWaterBlock)
             {
-                ParticleSystem.MainModule newMain = waterfallPart.main;
-                newMain.startColor = Color.blue;
+                //ParticleSystem.MainModule newMain = waterfallPart.main;
+                //newMain.startColor = Color.blue;
+                ParticleSystem.ShapeModule newShape = waterfallPart.shape;
+                newShape.scale = patScale;
+
+                ParticleSystem.EmissionModule newEmiss = waterfallPart.emission;
+                newEmiss.rateOverTime = patEmiss;
             }
 
             Destroy(gameObject);
