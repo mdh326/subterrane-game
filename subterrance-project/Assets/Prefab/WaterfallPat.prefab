@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4417672045629182}
   - component: {fileID: 198767587620325516}
   - component: {fileID: 199070777891795570}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SubEmitter0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4187637192229590}
   - component: {fileID: 198955150258599954}
   - component: {fileID: 199111208413094632}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SubEmitter1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4287943179621072}
   - component: {fileID: 198889037903417480}
   - component: {fileID: 199738108347748988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WaterfallPat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1906599347734488}
   m_LocalRotation: {x: -0.28135395, y: 0.40686443, z: 0.14611839, w: 0.85670924}
-  m_LocalPosition: {x: 13.22, y: 2.86, z: 7.97}
+  m_LocalPosition: {x: 13.33, y: 2.86, z: 7.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4187637192229590}
@@ -4701,13 +4701,13 @@ ParticleSystem:
   m_GameObject: {fileID: 1906599347734488}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 1.2
+  simulationSpeed: 1
   stopAction: 0
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
-  autoRandomSeed: 0
+  autoRandomSeed: 1
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
@@ -13950,7 +13950,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: bb57582e899e96142ac991c731a6b929, type: 2}
+  - {fileID: 2100000, guid: 4f7881d77c1093f47bc54b79c8473856, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
